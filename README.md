@@ -1,8 +1,3 @@
-Welcome to the Python world!
+Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis. Python is a general-purpose language, meaning it can be used to create a variety of different programs and isn’t specialized for any specific problems. This versatility, along with its beginner-friendliness, has made it one of the most-used programming languages today.
 
-The first projects are more "C-oriented" - no tricks, no funky syntax - simple!
-If you've already played with Python, don't worry, fun things will come.
-You'll soon find that with Python (and the majority of higher level languages), there are ten different ways to do the same thing. Some tasks will expect only one implementation, while other tasks will have multiple possible implementations.
-Like C, Python also has a linter / style guide like Betty, called PEP8, also now known as PyCode.
-
-Enjoy!
+Stack Overflow's 2022 Developer Survey revealed that Python is the fourth most popular programming language, with respondents saying that they use Python almost 50 percent of the time in their development work. Survey results also showed that Python is tied with Rust as the most-wanted technology, with 18% percent of developers who aren't using it already saying that they are interested in learning Python!
