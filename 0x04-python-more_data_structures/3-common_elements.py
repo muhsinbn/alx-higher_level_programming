@@ -1,18 +1,12 @@
 #!/usr/bin/python3
+
 def common_elements(set_1, set_2):
-    """
-    Returns a set of common elements in two sets
-    ...
+    commonWords = set()
+    for words in set_1:
+        if words in set_2:
+            commonWords.add(words)
+    return commonWords
 
-    Parameters
-    ----------
-    set_1 : set
-        first set of elements
-    set_2 : set
-        second set of elements
-
-    Return:
-        the result of the operation (&)
-    """
-
-    return (set_1 & set_2)
+# alternative...this short ways are killing me🤯😂:
+# def common_elements(set_1, set_2):
+# return set_1 & set_2
