@@ -5,4 +5,4 @@
 
 class Square
     """This does not contain any thing yet."""
-    pas
+    pass
