@@ -1,14 +1,7 @@
 #!/usr/bin/python3
-"""Class that inherits from list"""
+"""Module returns the list of available attributes and methods of an object"""
 
 
-class MyList(list):
-    """the class that inherits from list"""
-    def __init__(self):
-        """Initiates the object"""
-        super().__init__()
-
-    def print_sorted(self):
-        """public instance method that prints sorted list"""
-        new = sorted(self)
-        print(new)
+def lookup(obj):
+    """The function that returns the list"""
+    return dir(obj)
