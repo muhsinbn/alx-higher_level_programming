@@ -1,8 +1,5 @@
--- A script that displays the top 3 cities tempreture
-
-SELECT city, AVG(temperature) AS avg_temperature
-FROM temperatures
-WHERE MONTH(date) IN (7, 8)
-GROUP BY city
-ORDER BY avg_temperature DESC
-LIMIT 3;
+-- A script that displays the max temperature of each state ordered by State name
+SELECT `state`, MAX(`value`) AS max_temp
+FROM `temperatures`
+GROUP BY `state`
+ORDER BY `state`;
