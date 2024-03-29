@@ -1,6 +1,5 @@
--- A script that displays the averrage tempreture
-
-SELECT city, AVG(temperature) AS avg_temperature_fahrenheit
-FROM temperatures
-GROUP BY city
-ORDER BY avg_temperature_fahrenheit DESC;
+-- A script that displays average tempearture(farenheit) by city ordered by temp
+SELECT `city`, AVG(`value`) AS `avg_temp`
+FROM `temperatures`
+GROUP BY `city`
+ORDER BY `avg_temp` DESC;
