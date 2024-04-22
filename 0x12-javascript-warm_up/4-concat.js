@@ -1,7 +1,8 @@
 #!/usr/bin/node
-
-// Destructure the third and fourth elements of process.argv to get the arguments
-const [,, arg1, arg2] = process.argv;
-
-// Print the arguments in the specified format
-console.log('${arg1} is ${arg2}');
+// A Script that prints two arguments passed to it with "is" in middle
+const { argv } = require('process');
+if (argv[2]) {
+  console.log(argv[2] + (argv[3] ? ' is ' + argv[3] : ' is undefined'));
+} else {
+  console.log('undefined is undefined');
+}
