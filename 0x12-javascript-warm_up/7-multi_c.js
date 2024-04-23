@@ -12,3 +12,4 @@ if (isNaN(x)) {
         count++;
     }
 }
+
