@@ -11,7 +11,7 @@ class Rectangle {
 
   // Instance method to print the rectangle using the character 'X'
   print () {
-    if (this.width === 0 || this.height === 0) {
+	  if (this.width === 0 || this.height === 0) {
             console.log('');
         } else {
             for (let i = 0; i < this.height; i++) {
