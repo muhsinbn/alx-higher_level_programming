@@ -5,7 +5,7 @@ const [,, arg] = process.argv;
 
 // Check if an argument was passed and print it, or print "No argument"
 if (arg === undefined) {
-	console.log('No argument');
+  console.log('No argument');
 } else {
-	console.log(arg);
+  console.log(arg);
 }
