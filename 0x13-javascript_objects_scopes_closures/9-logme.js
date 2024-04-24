@@ -1,9 +1,8 @@
 #!/usr/bin/node
 
-let count = 0;
+let argumentNumber = 0;
 
-// logMe function that prints the number of arguments
-exports.logMe = function(item) {
-	console.log(`${count}: ${item}`);
-	count++;
+exports.logMe = function (item) {
+  console.log(`${argumentNumber}: ${item}`);
+  argumentNumber++;
 };
