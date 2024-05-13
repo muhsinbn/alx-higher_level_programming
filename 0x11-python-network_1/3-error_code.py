@@ -1,34 +1,22 @@
 #!/usr/bin/python3
+""" This script takes in a URL, sends a request to the URL, and displays
+the body of the response (decoded in utf-8).
+It also handles urllib.error.HTTPError exceptions and prints the HTTP status
+code in case of an error.
 """
-Python script that takes in a URL and an email, sends a POST request to the
-passed URL with the email as a parameter,
-and displays the body of the response (decoded in utf-8)
 
-Requirements:
-- Uses the packages urllib and sys
-- Does not import packages other than urllib and sys
-- The email must be sent in the email variable
-- Does not need to check arguments passed to the script (number or type)
-- Uses a with statement
-
-Usage:
-    python script.py <URL> <EMAIL>
-"""
 import urllib.request
+import urllib.error
 import sys
-import urllib.parse
 
+if len(sys.argv) != 2:
+    print("Usage: python script.py <URL>")
+    sys.exit(1)
 
-if __name__ == "__main__":
-    url = sys.argv[1]
-    email = sys.argv[2]
+url = sys.argv[1]
 
-    # Encode the email as a parameter
-    data = urllib.parse.urlencode({'email': email}).encode('utf-8')
-
-    # Send a POST request to the specified URL with email as parameter
-    with urllib.request.urlopen(url, data=data) as response:
-        body = response.read().decode('utf-8')
-
-    # Display the body of the response
-    print(body)
+try:
+    with urllib.request.urlopen(url) as response:
+        print(response.read().decode('utf-8'))
+except urllib.error.HTTPError as e:
+    print("Error code:", e.code)
